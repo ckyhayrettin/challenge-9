@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/7e79b95b73.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e79b95b73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Time tracking dashboard</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="card">
+            <div class="card__top">
+                <div class="card__image">
+                    <img class="card__img" src="./images/image-jeremy.png" alt="profile foto">
+                </div>
+                <div class="card__text">
+                    <div class="card__small">Repot for</div>
+                    <div class="card__name">Jeremy</div>
+                    <div class="card__lastname">Robson</div>
+                </div>
+            </div>
+            <div class="card__bottom">
+                <button id="daily" class="card__daily">Daily</button>
+                <button id="weekly" class="card__weekly">Weekly</button>
+                <button id="monthly" class="card__monthly">Monthly</button>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="dashboard__top">
+                <div class="dashboard__card-briefcase">
+                    <div class="dashboard__card-head">
+                        <i class="fa-solid fa-briefcase fa-4x dashboard__briefcase"></i>
+                    </div>
+                    <div class="dashboard__card-body dots">
+                        <div class="dashboard__body-top">
+                            <div class="dashboard__bady-title">work</div>
+                            <i class="fa-solid fa-ellipsis fa-xl dashboard__dot"></i>
+                        </div>
+                        <div class="dashboard__card-bottom">
+                            <div class="dashboard__card-times work">32hrs</div>
+                            <div class="dashboard__card-week">Last-Week -36hrs </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__card-gamepad">
+                    <div class="dashboard__card-head">
+                        <i class="fa-solid fa-gamepad fa-4x dashboard__gamepad"></i>
+                    </div>
+                    <div class="dashboard__card-body">
+                        <div class="dashboard__body-top">
+                            <div class="dashboard__bady-title">pla</div>
+                            <i class="fa-solid fa-ellipsis fa-xl dashboard__dot"></i>
+                        </div>
+                        <div class="dashboard__card-bottom">
+                            <div class="dashboard__card-times gamepad">10hrs</div>
+                            <div class="dashboard__card-week">Last-Week -8hrs </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__card-book">
+                    <div class="dashboard__card-head">
+                        <i class="fa-solid fa-book-open fa-4x dashboard__book"></i>
+                    </div>
+                    <div class="dashboard__card-body">
+                        <div class="dashboard__body-top">
+                            <div class="dashboard__bady-title">study</div>
+                            <i class="fa-solid fa-ellipsis fa-xl dashboard__dot"></i>
+                        </div>
+                        <div class="dashboard__card-bottom">
+                            <div class="dashboard__card-times book">4hrs</div>
+                            <div class="dashboard__card-week">Last-Week -7hrs </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__bottom">
+                <div class="dashboard__card-falling">
+                    <div class="dashboard__card-head">
+                        <i class="fa-solid fa-person-falling fa-4x dashboard__falling"></i>
+                    </div>
+                    <div class="dashboard__card-body">
+                        <div class="dashboard__body-top">
+                            <div class="dashboard__bady-title">excercise</div>
+                            <i class="fa-solid fa-ellipsis fa-xl dashboard__dot"></i>
+                        </div>
+                        <div class="dashboard__card-bottom">
+                            <div class="dashboard__card-times falling">4hrs</div>
+                            <div class="dashboard__card-week">Last-Week -5hrs </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__card-comment">
+                    <div class="dashboard__card-head">
+                        <i class="fa-solid fa-comment-dots fa-4x dashboard__comment"></i>
+                    </div>
+                    <div class="dashboard__card-body">
+                        <div class="dashboard__body-top">
+                            <div class="dashboard__bady-title">social</div>
+                            <i class="fa-solid fa-ellipsis fa-xl dashboard__dot"></i>
+                        </div>
+                        <div class="dashboard__card-bottom">
+                            <div class="dashboard__card-times comment">5hrs</div>
+                            <div class="dashboard__card-week">Last-Week -10hrs </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__card-heart">
+                    <div class="dashboard__card-head">
+                        <i class="fa-solid fa-heart-circle-plus fa-4x dashboard__heart"></i>
+                    </div>
+                    <div class="dashboard__card-body">
+                        <div class="dashboard__body-top">
+                            <div class="dashboard__bady-title">self care</div>
+                            <i class="fa-solid fa-ellipsis fa-xl dashboard__dot"></i>
+                        </div>
+                        <div class="dashboard__card-bottom">
+                            <div class="dashboard__card-times heart">2hrs</div>
+                            <div class="dashboard__card-week">Last-Week -2hrs </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="secmobile">
+        <div class="cardmob">
+            <div class="cardmob__top">
+                <div class="cardmob__left">
+                    <img class="cardmob__img" src="./images/image-jeremy.png" alt="profile foto">
+                </div>
+                <div class="cardmob__right">
+                    <div class="cardmob__small">Repot for</div>
+                    <div class="cardmob__name">Jeremy Robson</div>
+                </div>
+            </div>
+            <div class="cardmob__bottom">
+                <p class="cardmob__daily">Daily</p>
+                <p class="cardmob__weekly">Weekly</p>
+                <p class="cardmob__monthly">Monthly</p>
+            </div>
+        </div>
+        <div class="dashboardmob">
+            <div class="dashboardmob__card-briefcase">
+                <div class="dashboardmob__card-head">
+                    <i class="fa-solid fa-briefcase fa-3x dashboardmob__briefcase"></i>
+                </div>
+                <div class="dashboardmob__card-body">
+                    <div class="dashboardmob__body-top">
+                        <div class="dashboardmob__bady-title">work</div>
+                        <i class="fa-solid fa-ellipsis fa-xl dashboardmob__dot"></i>
+                    </div>
+                    <div class="dashboardmob__card-bottom">
+                        <div class="dashboardmob__card-times">32hrs</div>
+                        <div class="dashboardmob__card-week">Last-Week -36hrs </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboardmob__card-gamepad">
+                <div class="dashboardmob__card-head">
+                    <i class="fa-solid fa-gamepad fa-3x dashboardmob__gamepad"></i>
+                </div>
+                <div class="dashboardmob__card-body">
+                    <div class="dashboardmob__body-top">
+                        <div class="dashboardmob__bady-title">pla</div>
+                        <i class="fa-solid fa-ellipsis fa-xl dashboardmob__dot"></i>
+                    </div>
+                    <div class="dashboardmob__card-bottom">
+                        <div class="dashboardmob__card-times">10hrs</div>
+                        <div class="dashboardmob__card-week">Last-Week -8hrs </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboardmob__card-book">
+                <div class="dashboardmob__card-head">
+                    <i class="fa-solid fa-book-open fa-4x dashboardmob__book"></i>
+                </div>
+                <div class="dashboardmob__card-body">
+                    <div class="dashboardmob__body-top">
+                        <div class="dashboardmob__bady-title">study</div>
+                        <i class="fa-solid fa-ellipsis fa-xl dashboardmob__dot"></i>
+                    </div>
+                    <div class="dashboardmob__card-bottom">
+                        <div class="dashboardmob__card-times">4hrs</div>
+                        <div class="dashboardmob__card-week">Last-Week -7hrs </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboardmob__card-falling">
+                <div class="dashboardmob__card-head">
+                    <i class="fa-solid fa-person-falling fa-3x dashboardmob__falling"></i>
+                </div>
+                <div class="dashboardmob__card-body">
+                    <div class="dashboardmob__body-top">
+                        <div class="dashboardmob__bady-title">excercise</div>
+                        <i class="fa-solid fa-ellipsis fa-xl dashboardmob__dot"></i>
+                    </div>
+                    <div class="dashboardmob__card-bottom">
+                        <div class="dashboardmob__card-times">4hrs</div>
+                        <div class="dashboardmob__card-week">Last-Week -5hrs </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboardmob__card-comment">
+                <div class="dashboardmob__card-head">
+                    <i class="fa-solid fa-comment-dots fa-3x dashboardmob__comment"></i>
+                </div>
+                <div class="dashboardmob__card-body">
+                    <div class="dashboardmob__body-top">
+                        <div class="dashboardmob__bady-title">social</div>
+                        <i class="fa-solid fa-ellipsis fa-xl dashboardmob__dot"></i>
+                    </div>
+                    <div class="dashboardmob__card-bottom">
+                        <div class="dashboardmob__card-times">5hrs</div>
+                        <div class="dashboardmob__card-week">Last-Week -10hrs </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboardmob__card-heart">
+                <div class="dashboardmob__card-head">
+                    <i class="fa-solid fa-heart-circle-plus fa-3x dashboardmob__heart"></i>
+                </div>
+                <div class="dashboardmob__card-body">
+                    <div class="dashboardmob__body-top">
+                        <div class="dashboardmob__bady-title">self care</div>
+                        <i class="fa-solid fa-ellipsis fa-xl dashboardmob__dot"></i>
+                    </div>
+                    <div class="dashboardmob__card-bottom">
+                        <div class="dashboardmob__card-times">2hrs</div>
+                        <div class="dashboardmob__card-week">Last-Week -2hrs </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

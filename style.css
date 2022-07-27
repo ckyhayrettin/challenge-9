@@ -1,0 +1,747 @@
+:root {
+  --clr-text-color: rgb(255, 255, 255);
+  --clr-Blue: hsl(246, 80%, 60%);
+  --clr-Lights-red: hsl(15, 100%, 70%);
+  --clr-Soft-blue: hsl(195, 74%, 62%);
+  --clr-Light-red: hsl(348, 100%, 68%);
+  --clr-Lime-green: hsl(145, 58%, 55%);
+  --clr-Violet: hsl(264, 64%, 52%);
+  --clr-Soft-orange: hsl(43, 84%, 65%);
+  --clr-Very-dark-blue: hsl(226, 43%, 10%);
+  --clr-Dark-blue: hsl(235, 46%, 20%);
+  --clr-Desaturated-blue: hsl(235, 45%, 61%);
+  --clr-Pale-Blue: hsl(236, 100%, 87%);
+  --clr-Font-size: 18px;
+  --clr-font-family: 'Rubik', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: var(--clr-font-family);
+}
+
+body {
+  max-width: 90rem;
+  max-height: 64rem;
+  background-color: var(--clr-Very-dark-blue);
+}
+
+body .section {
+  width: 69.4375rem;
+  height: 32.375rem;
+  margin: 3rem auto 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section .card {
+  width: 22.95%;
+  height: 32.375rem;
+  border-radius: 0.9rem;
+  background-color: var(--clr-Dark-blue);
+}
+
+body .section .card__top {
+  width: 100%;
+  height: 22.125rem;
+  padding: 2.125rem 1.8125rem 5.5rem;
+  background-color: var(--clr-Blue);
+  border-radius: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section .card__image {
+  height: 5.25rem;
+  width: 5.25rem;
+}
+
+body .section .card__img {
+  width: 100%;
+}
+
+body .section .card__text {
+  width: 12.3125rem;
+  height: 6.6875rem;
+  padding: 3px 4px;
+  color: var(--clr-Pale-Blue);
+}
+
+body .section .card__small {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+body .section .card__name {
+  font-size: 1.875rem;
+  letter-spacing: 5px;
+  color: white;
+}
+
+body .section .card__lastname {
+  font-size: 1.875rem;
+  letter-spacing: 5px;
+  color: white;
+}
+
+body .section .card__bottom {
+  padding: 1.8125rem 2.0625rem 2.0625rem 2.0625rem;
+  height: 10.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .section .card__daily {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--clr-Pale-Blue);
+  cursor: pointer;
+  background-color: var(--clr-Dark-blue);
+  border: none;
+}
+
+body .section .card__daily:hover {
+  color: white;
+}
+
+body .section .card__weekly {
+  font-size: 1rem;
+  font: 0.875rem;
+  letter-spacing: 2px;
+  color: var(--clr-Pale-Blue);
+  cursor: pointer;
+  background-color: var(--clr-Dark-blue);
+  border: none;
+}
+
+body .section .card__weekly:hover {
+  color: white;
+}
+
+body .section .card__monthly {
+  font-size: 1rem;
+  font: 0.875rem;
+  letter-spacing: 2px;
+  color: var(--clr-Pale-Blue);
+  cursor: pointer;
+  background-color: var(--clr-Dark-blue);
+  border: none;
+}
+
+body .section .card__monthly:hover {
+  color: white;
+}
+
+body .section .dashboard {
+  margin-left: 1.875rem;
+}
+
+body .section .dashboard__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section .dashboard__card-briefcase {
+  width: 30.90%;
+  height: 15.25rem;
+  border-radius: 0.9375rem;
+  background-color: var(--clr-Lights-red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-gamepad {
+  width: 30.90%;
+  height: 15.25rem;
+  border-radius: 0.9375rem;
+  background-color: var(--clr-Soft-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-book {
+  width: 30.90%;
+  height: 15.25rem;
+  border-radius: 0.9375rem;
+  background-color: var(--clr-Light-red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-falling {
+  width: 30.90%;
+  height: 15.25rem;
+  border-radius: 0.9375rem;
+  background-color: var(--clr-Lime-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-comment {
+  width: 30.90%;
+  height: 15.25rem;
+  border-radius: 0.9375rem;
+  background-color: var(--clr-Violet);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-heart {
+  width: 30.90%;
+  height: 15.25rem;
+  border-radius: 0.9375rem;
+  background-color: var(--clr-Soft-orange);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-head {
+  height: 2.8125rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body .section .dashboard__card-body {
+  background-color: var(--clr-Dark-blue);
+  border-radius: 0.9375rem;
+  width: 100%;
+  height: 12.4375rem;
+  padding: 2rem 1.875rem 2.25rem 1.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .section .dashboard__card-body:hover {
+  background-color: #34397B;
+}
+
+body .section .dashboard__body-top {
+  height: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section .dashboard__bady-title {
+  font-size: 1rem;
+  color: white;
+}
+
+body .section .dashboard__dot {
+  color: white;
+  cursor: pointer;
+}
+
+body .section .dashboard__card-bottom {
+  width: 100%;
+  height: 4.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .section .dashboard__card-times {
+  padding-left: 2px;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  color: white;
+}
+
+body .section .dashboard__card-week {
+  font-size: 0.6875rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+body .section .dashboard__bottom {
+  margin-top: 1.875rem;
+  width: 51.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section .dashboard__briefcase {
+  position: absolute;
+  right: 5%;
+  top: -15%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: rgba(211, 211, 211, 0.6);
+}
+
+body .section .dashboard__gamepad {
+  position: absolute;
+  right: 5%;
+  top: -15%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: rgba(211, 211, 211, 0.6);
+}
+
+body .section .dashboard__book {
+  position: absolute;
+  right: 5%;
+  top: -15%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: rgba(211, 211, 211, 0.6);
+}
+
+body .section .dashboard__falling {
+  position: absolute;
+  right: 5%;
+  top: -15%;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  color: rgba(211, 211, 211, 0.6);
+}
+
+body .section .dashboard__comment {
+  position: absolute;
+  right: 5%;
+  top: -15%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: rgba(211, 211, 211, 0.6);
+}
+
+body .section .dashboard__heart {
+  position: absolute;
+  right: 5%;
+  top: -25%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: rgba(211, 211, 211, 0.6);
+}
+
+body .secmobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 100%;
+  }
+  body {
+    max-width: 23.47rem;
+    max-height: 91.8125rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--clr-Very-dark-blue);
+  }
+  body .section {
+    display: none;
+  }
+  body .secmobile {
+    display: block;
+    height: 81.6875rem;
+    width: 20.4375rem;
+    margin: 5.0625rem auto;
+  }
+  body .secmobile .cardmob {
+    width: 100%;
+    height: 12.6875rem;
+    background-color: var(--clr-Dark-blue);
+    border-radius: 0.9375rem;
+  }
+  body .secmobile .cardmob__top {
+    width: 100%;
+    height: 8.375rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Blue);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.125rem 1.75rem 1.9375rem;
+  }
+  body .secmobile .cardmob__left {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  body .secmobile .cardmob__img {
+    width: 100%;
+    height: 100%;
+  }
+  body .secmobile .cardmob__right {
+    height: 4.375rem;
+    width: 12.5rem;
+    padding: 1.125rem 0.875rem 0.875rem;
+  }
+  body .secmobile .cardmob__small {
+    font-size: 0.75rem;
+    color: var(--clr-text-color);
+  }
+  body .secmobile .cardmob__name {
+    font-size: 1.125rem;
+    color: var(--clr-text-color);
+  }
+  body .secmobile .cardmob__bottom {
+    padding: 1.75rem 1.375rem 1.5625rem 2.1875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .secmobile .cardmob__daily {
+    color: var(--clr-Pale-Blue);
+    cursor: pointer;
+  }
+  body .secmobile .cardmob__daily:hover {
+    color: var(--clr-text-color);
+  }
+  body .secmobile .cardmob__weekly {
+    color: var(--clr-Pale-Blue);
+    cursor: pointer;
+  }
+  body .secmobile .cardmob__weekly:hover {
+    color: var(--clr-text-color);
+  }
+  body .secmobile .cardmob__monthly {
+    color: var(--clr-Pale-Blue);
+    cursor: pointer;
+  }
+  body .secmobile .cardmob__monthly:hover {
+    color: var(--clr-text-color);
+  }
+  body .secmobile .dashboardmob {
+    margin-top: 1.5rem;
+  }
+  body .secmobile .dashboardmob__card-briefcase {
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Lights-red);
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__card-gamepad {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Soft-blue);
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__card-book {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Light-red);
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__card-falling {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Lime-green);
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__card-comment {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Light-red);
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__card-heart {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    background-color: var(--clr-Soft-orange);
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__card-head {
+    height: 23.75%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  body .secmobile .dashboardmob__briefcase {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: rgba(211, 211, 211, 0.6);
+  }
+  body .secmobile .dashboardmob__gamepad {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: rgba(211, 211, 211, 0.6);
+  }
+  body .secmobile .dashboardmob__book {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: rgba(211, 211, 211, 0.6);
+  }
+  body .secmobile .dashboardmob__falling {
+    position: absolute;
+    right: 5%;
+    top: -15%;
+    transform: rotate(120deg);
+    color: rgba(211, 211, 211, 0.6);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+  }
+  body .secmobile .dashboardmob__comment {
+    position: absolute;
+    right: 5%;
+    top: -10%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: rgba(211, 211, 211, 0.6);
+  }
+  body .secmobile .dashboardmob__heart {
+    position: absolute;
+    right: 5%;
+    top: -30%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: rgba(211, 211, 211, 0.6);
+  }
+  body .secmobile .dashboardmob__card-body {
+    height: 76.25%;
+    width: 100%;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    background-color: var(--clr-Dark-blue);
+    padding: 1.9375rem 1.5rem 2.1875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .secmobile .dashboardmob__body-top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: var(--clr-text-color);
+  }
+  body .secmobile .dashboardmob__card-bottom {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: var(--clr-text-color);
+  }
+}
+/*# sourceMappingURL=style.css.map */
